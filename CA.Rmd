@@ -1,0 +1,8 @@
+---
+title: "CA"
+---
+
+```{r CA1, out.width="80%", fig.align="left", echo=FALSE}
+knitr::include_graphics("images/CA1.png")
+```
+
