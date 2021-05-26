@@ -376,12 +376,13 @@ div.tocify {
 <p>Let’s click on the Principal Component Analysis button.<br />
 For the demonstration of the PCA module, we will be using the decathlon data set (you can catch a glimpse of it on the figure below) which is bundled with MEDA.</p>
 <p><img src="images/PCA1.png" width="80%" style="display: block; margin: auto auto auto 0;" /> <br><br /></p>
-<div id="graphic-user-interface" class="section level1">
-<h1><strong>Graphic user interface</strong></h1>
+<div id="the-interface" class="section level2">
+<h2><strong>The interface</strong></h2>
 <p>When opening the PCA submodule, a rather long graphic user interface (a.k.a. GUI) appears. It might feels intimidating at first, but we will see how it works step by step. <br><br /></p>
 <div id="variables-selection" class="section level3">
 <h3>Variables selection</h3>
-<p>The first part of this GUI, like most of jamovi modules, is about selecting the variables for your analysis and giving them a role. As you can see on the figure below, there are 4 different type of variable for the PCA. First, we have the active variables, which in the case of a PCA are imperatively quantitative. For the PCA to run correctly, you must select a number of active variables greater than or equal to the number of factors given in the <strong><em>Automatic Description of the Axes</em></strong> part of the GUI (see the third figure below). If this condition is not met, the analysis will produce an error. Then comes the french touch of this module: the quantitative and categorical supplementary variables. These variables won’t participate in the construction of the different axes but will be plotted on the individuals factor map (for the categories of the categorical variables) and on the variables factor map (for the quantitative supplementary variables). Lastly, the individual variables will assign a label to each individuals on the individuals factor map. <br><br /> <img src="images/PCA2.png" width="50%" style="display: block; margin: auto auto auto 0;" /> <br><br /></p>
+<p><img src="images/PCA2.png" width="50%" style="display: block; margin: auto auto auto 0;" /> <br><br /></p>
+<p>The first part of this GUI, like most of jamovi modules, is about selecting the variables for your analysis and giving them a role. As you can see on the figure below, there are 4 different type of variable for the PCA. First, we have the active variables, which in the case of a PCA are imperatively quantitative. Then comes the french touch of this module: the quantitative and categorical supplementary variables. These variables won’t participate in the construction of the different axes but will be plotted on the individuals factor map (for the categories of the categorical variables) and on the variables factor map (for the quantitative supplementary variables). Lastly, the individual variables will assign a label to each individuals on the individuals factor map. <br><br /></p>
 </div>
 <div id="normalized-pca" class="section level3">
 <h3>Normalized PCA</h3>
@@ -389,16 +390,21 @@ For the demonstration of the PCA module, we will be using the decathlon data set
 </div>
 <div id="graphic-options" class="section level3">
 <h3>Graphic options</h3>
-<p>Let’s move on to the next set of options: the <strong>graphic options</strong>. As the name suggests, those options rules the display of the graphics in the results window. With those options, you can choose which components to plot on x-axis and the y-axis. For the individuals factor map, you can choose to display only the individuals, only the categories (of the categorical variables) or both of them. It’s also possible to color the individuals based on the value they have for the categorical variable with the option <em><strong>Grouping variable</strong></em>. You can do the same with the active and supplementary variables for the variables factor map. <br><br /> <img src="images/PCA3.png" width="50%" style="display: block; margin: auto auto auto 0;" /> <br><br /></p>
+<p><img src="images/PCA3.png" width="50%" style="display: block; margin: auto auto auto 0;" /> <br><br /></p>
+<p>Let’s move on to the next set of options: the <strong>graphic options</strong>. As the name suggests, those options rules the display of the graphics in the results window. With those options, you can choose which components to plot on x-axis and the y-axis. For the individuals factor map, you can choose to display only the individuals, only the categories (of the categorical variables) or both of them. It’s also possible to color the individuals based on the value they have for the categorical variable with the option <em><strong>Grouping variable</strong></em>. You can do the same with the active and supplementary variables for the variables factor map. <br><br /></p>
 </div>
 <div id="numerical-indicators" class="section level3">
 <h3>Numerical indicators</h3>
-<p>At last, we have the options for the numerical indicators. The options <em>Significance threshold</em> from the <strong><em>Automatic Description of the Axes</em></strong> section fixes the threshold beneath which a variable characterize a dimension. The option <strong><em>Number of factors</em></strong> affect on both the number of dimensions to be described and the number of dimensions shown for the individual and variable tables (which will be covered right after).<br />
-Finally, the individual and variable tables give you the freedom to choose to show or not some indicators calculated during the PCA: the coordinates, the contributions and the cosine of each individual/variable.</p>
 <p><img src="images/PCA4.png" width="50%" style="display: block; margin: auto auto auto 0;" /> <br><br /></p>
+<p>At last, we have the options for the numerical indicators. The options <em>Significance threshold</em> from the <strong><em>Automatic Description of the Axes</em></strong> section fixes the threshold beneath which a variable characterize a dimension. The option <em>Number of factors</em> affect on both the number of dimensions to be described and the number of dimensions shown for the individual and variable tables (which will be covered right after).<br />
+Finally, the individual and variable tables give you the freedom to choose to show or not some indicators calculated during the PCA: the coordinates, the contributions and the cosine of each individual/variable. <br><br /></p>
 </div>
-<div id="example" class="section level2">
-<h2><strong>Example</strong></h2>
+</div>
+<div id="potential-issues" class="section level2">
+<h2><strong>Potential issue(s)</strong></h2>
+<div id="incorrect-number-of-factors" class="section level3">
+<h3>Incorrect number of factors</h3>
+<p>For the PCA to run correctly, you must indicate a number of factors lesser than or equal to the number of active variables selected. If this condition is not met, the analysis will produce an error.</p>
 </div>
 </div>
 

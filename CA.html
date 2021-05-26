@@ -374,21 +374,31 @@ div.tocify {
 
 
 <p>The second analysis available in the multivariate analysis submenu is the correspondence analysis.<br />
-Since the CA is used on contingency table, the data you will be using in jamovi must contain a column with the row labels and the rest of the columns must only take as value positive integer (e.g. frequency in a contingency table). You can see an example in the figure below. <img src="images/CA1.png" width="80%" style="display: block; margin: auto auto auto 0;" /> <br><br /></p>
+Since the CA is used on contingency table, the data used for this analysis in jamovi must contain a column with the row labels and the rest of the columns must only take as value positive integer (e.g. frequency in a contingency table). You can see an example in the figure below. <img src="images/CA1.png" width="60%" style="display: block; margin: auto auto auto 0;" /> <br><br /></p>
 <div id="the-interface" class="section level1">
 <h1><strong>The interface</strong></h1>
-<p>The CA interface in it’s a structure is very similar to the PCA interface. It first has the variable suppliers, the graphic options and the numerical indicators. <br><br /></p>
+<p>The CA interface in it’s a structure is very similar to the PCA interface. From top to bottom, there are the variable suppliers, the graphic options and the numerical indicators. <br><br /></p>
 <div id="variables-selection" class="section level3">
 <h3>Variables selection</h3>
-<p><img src="images/CA2.png" width="80%" style="display: block; margin: auto auto auto 0;" /></p>
+<p><img src="images/CA2.png" width="60%" style="display: block; margin: auto auto auto 0;" /></p>
 <p>Similarly to the PCA, the first part of the interface is selecting the variables and giving them a role. For the CA, you have to specify the variable used as the row labels as well as the active columns. it’s also possible to add supplementary columns. <br><br /></p>
 </div>
 <div id="graphic-options" class="section level3">
 <h3>Graphic options</h3>
-<p><img src="images/CA3.png" width="80%" style="display: block; margin: auto auto auto 0;" /> <br><br /></p>
-<p>The <strong><em>Components to Plot</em></strong> options are used to select the dimensions to be plotted on the x-axis and y-axis. The <strong><em>Quality of Representation</em></strong> options allow you to choose which rows (or columns) to highlight in the plot representing the rows (or columns). For instance, if we set 3 in the <em>Rows</em> textbox, the 3 rows which are the best represented on both the x-axis and y-axis (the criteria used is the sum of the cosine on both of those axes), will be highlighted (see the figure below).</p>
-<p><img src="images/CA4.png" width="100%" style="display: block; margin: auto auto auto 0;" /></p>
+<p><img src="images/CA3.png" width="60%" style="display: block; margin: auto auto auto 0;" /> <br><br /></p>
+<p>The <strong><em>Components to Plot</em></strong> options are used to select the dimensions to be plotted on the x-axis and y-axis. The <strong><em>Quality of Representation</em></strong> options allow you to choose which rows (or columns) to highlight in the plot representing the rows (or columns). For instance, if we set 3 in the <em>Rows</em> text box, the 3 rows which are the best represented on both the x-axis and y-axis (the criteria used is the sum of the cosine on both of those axes), will be highlighted (see the figure below).</p>
+<p><img src="images/CA4.png" width="80%" style="display: block; margin: auto auto auto 0;" /> <br><br /></p>
+<p>Lastly, the <strong><em>Representation of the Ellipses</em></strong> options allow you to display confidence ellipses around either or both rows and columns. Here is an example when checking the <em>Around columns</em> checkbox.</p>
+<p><img src="images/CA5.png" width="60%" style="display: block; margin: auto auto auto 0;" /> <br><br /> You can also choose to show or not the supplementary columns on the graphs. <br><br /></p>
 </div>
+<div id="numerical-indicators" class="section level3">
+<h3>Numerical indicators</h3>
+<p><img src="images/CA6.png" width="60%" style="display: block; margin: auto auto auto 0;" /> <br><br /> Since this part of the interface is identical in all three methods of the <strong>Multivariate Analysis</strong> submenu, you should go see the explanation on the <a href="PCA.html#numerical-indicators">PCA page</a> where it has already been covered. <br><br /></p>
+</div>
+</div>
+<div id="potential-issues" class="section level1">
+<h1><strong>Potential issue(s)</strong></h1>
+<p>Unlike the PCA, where the <em>Number of factors</em> in the <strong><em>Automatic Description of the Axes</em></strong> section must be lesser than or equal to the number of active variable, here it must be strictly lower to the number of active variable (columns in this context). If this condition is not met, an error will occur (see below).</p>
 </div>
 
 

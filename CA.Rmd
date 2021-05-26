@@ -6,9 +6,9 @@ output:
     toc_float: yes
 ---
 
-The second analysis available in the multivariate analysis submenu is the correspondence analysis.\
-Since the CA is used on contingency table, the data you will be using in jamovi must contain a column with the row labels and the rest of the columns must only take as value positive integer (e.g. frequency in a contingency table). You can see an example in the figure below.
-```{r CA1, out.width="80%", fig.align="left", echo=FALSE}
+The second analysis available in the **Multivariate Analysis** submenu is the correspondence analysis.\
+Since the CA is used on contingency table, the data used for this analysis in jamovi must contain a column with the row labels and the rest of the columns must only take as value positive integer (e.g. frequency in a contingency table). You can see an example in the figure below.
+```{r CA1, out.width="60%", fig.align="left", echo=FALSE}
 knitr::include_graphics("images/CA1.png")
 ```
 <br><br />
@@ -21,7 +21,7 @@ The CA interface in it's a structure is very similar to the PCA interface. From 
 
 ### Variables selection
 
-```{r CA2, out.width="80%", fig.align="left", echo=FALSE}
+```{r CA2, out.width="60%", fig.align="left", echo=FALSE}
 knitr::include_graphics("images/CA2.png")
 ```
 
@@ -30,19 +30,35 @@ Similarly to the PCA, the first part of the interface is selecting the variables
 
 ### Graphic options
 
-```{r CA3, out.width="80%", fig.align="left", echo=FALSE}
+```{r CA3, out.width="60%", fig.align="left", echo=FALSE}
 knitr::include_graphics("images/CA3.png")
 ```
 <br><br />
 
 The __*Components to Plot*__ options are used to select the dimensions to be plotted on the x-axis and y-axis. The __*Quality of Representation*__ options allow you to choose which rows (or columns) to highlight in the plot representing the rows (or columns). For instance, if we set 3 in the *Rows* text box, the 3 rows which are the best represented on both the x-axis and y-axis (the criteria used is the sum of the cosine on both of those axes), will be highlighted (see the figure below).
 
-```{r CA4, out.width="100%", fig.align="left", echo=FALSE}
+```{r CA4, out.width="80%", fig.align="left", echo=FALSE}
 knitr::include_graphics("images/CA4.png")
 ```
+<br><br />
 
-Lastly, the *Representation of the Ellipses* options allow you to display confidence ellipses around either or both rows and columns. 
+Lastly, the __*Representation of the Ellipses*__ options allow you to display confidence ellipses around either or both rows and columns. Here is an example when checking the *Around columns* checkbox.
 
-```{r CA5, out.width="100%", fig.align="left", echo=FALSE}
+```{r CA5, out.width="60%", fig.align="left", echo=FALSE}
 knitr::include_graphics("images/CA5.png")
 ```
+<br><br />
+You can also choose to show or not the supplementary columns on the graphs.
+<br><br />
+
+### Numerical indicators
+```{r CA6, out.width="60%", fig.align="left", echo=FALSE}
+knitr::include_graphics("images/CA6.png")
+```
+<br><br />
+Since this part of the interface is identical in all three methods of the **Multivariate Analysis** submenu, you should go see the explanation on the [PCA page](PCA.html#numerical-indicators) where it has already been covered.
+<br><br />
+
+# **Potential issue(s)**
+
+Unlike the PCA, where the *Number of factors* in the __*Automatic Description of the Axes*__ section must be lesser than or equal to the number of active variable, here it must be strictly lower to the number of active variable (columns in this context). If this condition is not met, an error will occur (see below).
