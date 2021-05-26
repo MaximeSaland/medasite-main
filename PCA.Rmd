@@ -14,7 +14,7 @@ knitr::include_graphics("images/PCA1.png")
 ```
 <br><br />
 
-# **Graphic user interface**
+# **The interface**
 
 When opening the PCA submodule, a rather long graphic user interface (a.k.a. GUI) appears.  It might feels intimidating at first, but we will see how it works step by step.
 <br><br />
