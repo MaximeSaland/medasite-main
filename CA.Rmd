@@ -35,7 +35,7 @@ knitr::include_graphics("images/CA3.png")
 ```
 <br><br />
 
-The __*Components to Plot*__ options are used to select the dimensions to be plotted on the x-axis and y-axis. The __*Quality of Representation*__ options allow you to choose which rows (or columns) to highlight in the plot representing the rows (or columns). For instance, if we set 3 in the *Rows* text box, the 3 rows which are the best represented on both the x-axis and y-axis (the criteria used is the sum of the cosine on both of those axes), will be highlighted (see the figure below).
+The __*Components to Plot*__ options are used to select the dimensions to be plotted on the x-axis and y-axis. The __*Quality of Representation*__ options allow you to choose which rows (or columns) to highlight in the plot representing the rows (or columns). For instance, if we set 3 in the *Rows* text box, the 3 rows which are the best represented on both the x-axis and y-axis (the criterion used is the sum of the cosine on both of those axes), will be highlighted (see the figure below).
 
 ```{r CA4, out.width="80%", fig.align="left", echo=FALSE}
 knitr::include_graphics("images/CA4.png")
@@ -61,4 +61,4 @@ Since this part of the interface is identical in all three methods of the **Mult
 
 # **Potential issue(s)**
 
-Unlike the PCA, where the *Number of factors* in the __*Automatic Description of the Axes*__ section must be lesser than or equal to the number of active variable, here it must be strictly lower to the number of active variable (columns in this context). If this condition is not met, an error will occur (see below).
+Unlike the PCA, where the *Number of factors* in the __*Automatic Description of the Axes*__ section must be less than or equal to the number of active variable, here it must be strictly lower to the number of active variable (columns in this context). If this condition is not met, an error will occur (see below).

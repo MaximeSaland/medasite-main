@@ -334,7 +334,7 @@ div.tocify {
       <a href="textual.html">By Textual Data</a>
     </li>
     <li>
-      <a href="descfreq.html">By Frequencies</a>
+      <a href="descfreq.html">By Columns/Rows (Contingency Table)</a>
     </li>
   </ul>
 </li>
@@ -391,20 +391,34 @@ For the demonstration of the PCA module, we will be using the decathlon data set
 <div id="graphic-options" class="section level3">
 <h3>Graphic options</h3>
 <p><img src="images/PCA3.png" width="50%" style="display: block; margin: auto auto auto 0;" /> <br><br /></p>
-<p>Let’s move on to the next set of options: the <strong>graphic options</strong>. As the name suggests, those options rules the display of the graphics in the results window. With those options, you can choose which components to plot on x-axis and the y-axis. For the individuals factor map, you can choose to display only the individuals, only the categories (of the categorical variables) or both of them. It’s also possible to color the individuals based on the value they have for the categorical variable with the option <em><strong>Grouping variable</strong></em>. You can do the same with the active and supplementary variables for the variables factor map. <br><br /></p>
+<p>Let’s move on to the next set of options: the <strong>Graphic options</strong>. As the name suggests, those options rules the display of the graphics in the results window. With those options, you can choose which components to plot on x-axis and the y-axis. For the individuals factor map, you can choose to display only the individuals, only the categories (of the categorical variables) or both of them. It’s also possible to color the individuals based on the value they have for the categorical variable with the option <strong><em>Grouping variable</em></strong>. You can do the same with the active and supplementary variables for the variables factor map. <br><br /></p>
 </div>
 <div id="numerical-indicators" class="section level3">
 <h3>Numerical indicators</h3>
 <p><img src="images/PCA4.png" width="50%" style="display: block; margin: auto auto auto 0;" /> <br><br /></p>
-<p>At last, we have the options for the numerical indicators. The options <em>Significance threshold</em> from the <strong><em>Automatic Description of the Axes</em></strong> section fixes the threshold beneath which a variable characterize a dimension. The option <em>Number of factors</em> affect on both the number of dimensions to be described and the number of dimensions shown for the individual and variable tables (which will be covered right after).<br />
-Finally, the individual and variable tables give you the freedom to choose to show or not some indicators calculated during the PCA: the coordinates, the contributions and the cosine of each individual/variable. <br><br /></p>
+<p>At last, we have the options for the numerical indicators. The option <strong><em>Significance threshold</em></strong> from the <strong>Automatic Description of the Axes</strong> section fixes the threshold beneath which a variable characterize a dimension. The option <strong><em>Number of factors</em></strong> affect both the number of dimensions to be described and the number of dimensions shown for the individual and variable tables (which will be covered right after).<br />
+Finally, the <strong><em>individual and variable tables options</em></strong> let you choose to display or not some indicators resulting from the PCA.<br />
+Those indicators (calculated on all the dimension from 1 to the number in the <strong><em>Number of factors</em></strong> option) are:</p>
+<ul>
+<li><p>The coordinates</p></li>
+<li><p>The contributions</p></li>
+<li><p>The square cosine <br><br /></p></li>
+</ul>
 </div>
 </div>
 <div id="potential-issues" class="section level2">
 <h2><strong>Potential issue(s)</strong></h2>
 <div id="incorrect-number-of-factors" class="section level3">
 <h3>Incorrect number of factors</h3>
-<p>For the PCA to run correctly, you must indicate a number of factors lesser than or equal to the number of active variables selected. If this condition is not met, the analysis will produce an error.</p>
+<p>For the PCA to run correctly, you must indicate a number of factors less than or equal to the number of active variables selected. If this condition is not met, the analysis will produce an error.</p>
+</div>
+</div>
+<div id="output-example" class="section level2">
+<h2><strong>Output example</strong></h2>
+<p>The data set used for this demo is the decathlon data set.<br />
+As for the selection of the variables, see the figure below: <img src="images/PCA5.png" width="60%" style="display: block; margin: auto auto auto 0;" /> <br><br /></p>
+<div id="representation-of-the-individuals" class="section level3">
+<h3>Representation of the individuals</h3>
 </div>
 </div>
 

@@ -38,7 +38,7 @@ knitr::include_graphics("images/PCA3.png")
 ```
 <br><br />
 
-Let's move on to the next set of options: the **graphic options**. As the name suggests, those options rules the display of the graphics in the results window. With those options, you can choose which components to plot on x-axis and the y-axis. For the individuals factor map, you can choose to display only the individuals, only the categories (of the categorical variables) or both of them. It's also possible to color the individuals based on the value they have for the categorical variable with the option _**Grouping variable**_. You can do the same with the active and supplementary variables for the variables factor map.
+Let's move on to the next set of options: the __Graphic options__. As the name suggests, those options rules the display of the graphics in the results window. With those options, you can choose which components to plot on x-axis and the y-axis. For the individuals factor map, you can choose to display only the individuals, only the categories (of the categorical variables) or both of them. It's also possible to color the individuals based on the value they have for the categorical variable with the option __*Grouping variable*__. You can do the same with the active and supplementary variables for the variables factor map.
 <br><br />
 
 ### Numerical indicators
@@ -47,12 +47,30 @@ knitr::include_graphics("images/PCA4.png")
 ```
 <br><br />
 
-At last, we have the options for the numerical indicators. The options *Significance threshold* from the __*Automatic Description of the Axes*__ section fixes the threshold beneath which a variable characterize a dimension. The option *Number of factors* affect both the number of dimensions to be described and the number of dimensions shown for the individual and variable tables (which will be covered right after).\
-Finally, the individual and variable tables give you the freedom to choose to show or not some indicators calculated during the PCA: the coordinates, the contributions and the cosine of each individual/variable.
+At last, we have the options for the numerical indicators. The option __*Significance threshold*__ from the __Automatic Description of the Axes__ section fixes the threshold beneath which a variable characterize a dimension. The option __*Number of factors*__ affect both the number of dimensions to be described and the number of dimensions shown for the individual and variable tables (which will be covered right after).\
+Finally, the __*individual and variable tables options*__ let you choose to display or not some indicators resulting from the PCA.\
+Those indicators (calculated on all the dimension from 1 to the number in the __*Number of factors*__ option) are:
+
+* The coordinates
+
+* The contributions
+
+* The square cosine
 <br><br />
 
 ## **Potential issue(s)**
 
 ### Incorrect number of factors
 
-For the PCA to run correctly, you must indicate a number of factors lesser than or equal to the number of active variables selected. If this condition is not met, the analysis will produce an error.
+For the PCA to run correctly, you must indicate a number of factors less than or equal to the number of active variables selected. If this condition is not met, the analysis will produce an error.
+
+## **Output example**
+
+The data set used for this demo is the decathlon data set.\
+As for the selection of the variables, see the figure below:
+```{r PCA5, out.width="60%", fig.align="left", echo=FALSE}
+knitr::include_graphics("images/PCA5.png")
+```
+<br><br />
+
+### Representation of the individuals
