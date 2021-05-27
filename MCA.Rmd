@@ -52,7 +52,7 @@ The __Graphic options__ allow you to choose which dimensions to plot as well as 
 knitr::include_graphics("images/MCA5.png")
 ```
 
-Since this part of the interface is identical in the PCA and CA option and given that it has already been covered in the [PCA guide](PCA.html#numerical-indicators), we recommend that you read the explanation there.
+Since this part of the interface is identical in the PCA and CA GUIs and given that it has already been covered in the [PCA guide](PCA.html#numerical-indicators), we recommend that you read the explanation there.
 <br><br />
 
 ## **Potential issue**
@@ -64,7 +64,12 @@ The number of factors option must be less than or equal to the number of active 
 
 ## **Output example**
 
-For this example, we use the gmo data set and we check all the option and let the default value for the other option. We put the 10 first variable in the *Active Variables (>1)* field and set the rest as categorical supplementary variable. Since the gmo data set doesn't have any quantitative variable, we simulated two and added them as supplementary quantitative variables.
+For this example, we use the gmo data set.. We put the 10 first variable in the *Active Variables (>1)* field and set the rest as categorical supplementary variable. Since the gmo data set doesn't have any quantitative variable, we simulated two and added them as supplementary quantitative variables.
+See below the figure for the settings:
+```{r MCA16, out.width="40%", fig.align="left", echo=FALSE}
+knitr::include_graphics(c("images/MCA16.png","images/MCA17.png","images/MCA18.png"))
+```
+<br><br />
 
 ### Representation of the individuals
 ```{r MCA6, out.width="60%", fig.align="left", echo=FALSE}
@@ -108,7 +113,7 @@ knitr::include_graphics("images/MCA12.png")
 ```
 <br><br />
 
-### Variable tables (coordinates, contribution, cosine)
+### Variable tables (coordinates, contributions, cosines)
 ```{r MCA13, out.width="60%", fig.align="left", echo=FALSE}
 knitr::include_graphics(c("images/MCA13.png","images/MCA14.png","images/MCA15.png"))
 ```

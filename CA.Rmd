@@ -14,7 +14,7 @@ knitr::include_graphics("images/CA1.png")
 <br><br />
 
 
-# **The interface**
+## **The interface**
 
 The CA interface in it's a structure is very similar to the PCA interface. From top to bottom, there are the variable suppliers, the graphic options and the numerical indicators.
 <br><br />
@@ -56,9 +56,67 @@ You can also choose to show or not the supplementary columns on the graphs.
 knitr::include_graphics("images/CA6.png")
 ```
 <br><br />
-Since this part of the interface is identical in all three methods of the **Multivariate Analysis** submenu, you should go see the explanation on the [PCA page](PCA.html#numerical-indicators) where it has already been covered.
+Since this part of the interface is identical in all three methods of the **Multivariate Analysis** submenu, you should go see the explanation on the [PCA page](PCA.html#numerical-indicators) where it has already been covered. The only difference in the case of a CA is that we talk about rows and columns (which have the same "role") instead of individual and variable.
 <br><br />
 
-# **Potential issue(s)**
+## **Potential issue(s)**
 
 Unlike the PCA, where the *Number of factors* in the __*Automatic Description of the Axes*__ section must be less than or equal to the number of active variable, here it must be strictly lower to the number of active variable (columns in this context). If this condition is not met, an error will occur (see below).
+<br><br />
+
+## **Output example**
+
+The data used in this example is the music data set.
+See the figure below for the settings:
+```{r CA7, out.width="40%", fig.align="left", echo=FALSE}
+knitr::include_graphics(c("images/CA7.png","images/CA8.png","images/CA9.png"))
+```
+<br><br />
+
+### Representation of the rows
+```{r CA10, out.width="60%", fig.align="left", echo=FALSE}
+knitr::include_graphics("images/CA10.png")
+```
+<br><br />
+
+### Representation of the columns
+```{r CA11, out.width="60%", fig.align="left", echo=FALSE}
+knitr::include_graphics("images/CA11.png")
+```
+<br><br />
+
+### Superimposed representation with ellipses
+```{r CA12, out.width="60%", fig.align="left", echo=FALSE}
+knitr::include_graphics("images/CA12.png")
+```
+<br><br />
+
+### Chi-squared test
+```{r CA13, out.width="20%", fig.align="left", echo=FALSE}
+knitr::include_graphics("images/CA13.png")
+```
+<br><br />
+
+### Eigenvalue table
+```{r CA14, out.width="40%", fig.align="left", echo=FALSE}
+knitr::include_graphics("images/CA14.png")
+```
+<br><br />
+
+### Description of the axes
+```{r CA15, out.width="40%", fig.align="left", echo=FALSE}
+knitr::include_graphics("images/CA15.png")
+```
+<br><br />
+
+### Row tables
+```{r CA16, out.width="30%", fig.align="left", echo=FALSE}
+knitr::include_graphics("images/CA16.png")
+```
+<br><br />
+
+### Column tables
+```{r CA17, out.width="30%", fig.align="left", echo=FALSE}
+knitr::include_graphics("images/CA17.png")
+```
+<br><br />

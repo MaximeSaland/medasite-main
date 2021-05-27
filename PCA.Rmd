@@ -66,11 +66,45 @@ For the PCA to run correctly, you must indicate a number of factors less than or
 
 ## **Output example**
 
-The data set used for this demo is the decathlon data set.\
-As for the selection of the variables, see the figure below:
-```{r PCA5, out.width="60%", fig.align="left", echo=FALSE}
-knitr::include_graphics("images/PCA5.png")
+The data set used for this demo is the decathlon data set. All the option are checked and the *Grouping variable* option is set to 1 to color the individual based on the competition they participated in. We set the value as 1 becaus Competition is the first (and only) categorical variable selected.
+See the figure below for the settings:
+```{r PCA5, out.width="40%", fig.align="left", echo=FALSE}
+knitr::include_graphics(c("images/PCA5.png","images/PCA13.png","images/PCA14.png"))
 ```
 <br><br />
 
 ### Representation of the individuals
+```{r PCA6, out.width="60%", fig.align="left", echo=FALSE}
+knitr::include_graphics("images/PCA6.png")
+```
+<br><br />
+
+### Representation of the variables
+```{r PCA7, out.width="60%", fig.align="left", echo=FALSE}
+knitr::include_graphics("images/PCA7.png")
+```
+<br><br />
+
+### Eigenvalue table
+```{r PCA8, out.width="40%", fig.align="left", echo=FALSE}
+knitr::include_graphics("images/PCA8.png")
+```
+<br><br />
+
+### Description of the axes
+```{r PCA9, out.width="30%", fig.align="left", echo=FALSE}
+knitr::include_graphics("images/PCA9.png")
+```
+<br><br />
+
+### Individual tables (coordinates)
+```{r PCA10, out.width="40%", fig.align="left", echo=FALSE}
+knitr::include_graphics("images/PCA10.png")
+```
+<br><br />
+
+### Variable table (coordinates, contributions, cosines)
+```{r PCA11, out.width="40%", fig.align="left", echo=FALSE}
+knitr::include_graphics(c("images/PCA11.png","images/PCA12.png"))
+```
+<br><br />
