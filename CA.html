@@ -374,10 +374,10 @@ div.tocify {
 
 
 <p>The second analysis available in the <strong>Multivariate Analysis</strong> submenu is the correspondence analysis.<br />
-Since the CA is used on contingency table, the data used for this analysis in jamovi must contain a column with the row labels and the rest of the columns must only take as value positive integer (e.g. frequency in a contingency table). You can see an example in the figure below. <img src="images/CA1.png" width="60%" style="display: block; margin: auto auto auto 0;" /> <br><br /></p>
+Since a CA is used on a contingency table, the data used for this analysis in jamovi must contain a column with the row labels and the rest of the columns must only take positive integer as value (e.g. frequency in a contingency table). You can see an example in the figure below. <img src="images/CA1.png" width="60%" style="display: block; margin: auto auto auto 0;" /> <br><br /></p>
 <div id="the-interface" class="section level2">
 <h2><strong>The interface</strong></h2>
-<p>The CA interface in it’s a structure is very similar to the PCA interface. From top to bottom, there are the variable suppliers, the graphic options and the numerical indicators. <br><br /></p>
+<p>The CA interface in it’s structure is very similar to the PCA interface. From top to bottom, there are the variable suppliers, the graphic options and the numerical indicators. <br><br /></p>
 <div id="variables-selection" class="section level3">
 <h3>Variables selection</h3>
 <p><img src="images/CA2.png" width="60%" style="display: block; margin: auto auto auto 0;" /></p>
@@ -393,12 +393,12 @@ Since the CA is used on contingency table, the data used for this analysis in ja
 </div>
 <div id="numerical-indicators" class="section level3">
 <h3>Numerical indicators</h3>
-<p><img src="images/CA6.png" width="60%" style="display: block; margin: auto auto auto 0;" /> <br><br /> Since this part of the interface is identical in all three methods of the <strong>Multivariate Analysis</strong> submenu, you should go see the explanation on the <a href="PCA.html#numerical-indicators">PCA page</a> where it has already been covered. The only difference in the case of a CA is that we talk about rows and columns (which have the same “role”) instead of individual and variable. <br><br /></p>
+<p><img src="images/CA6.png" width="60%" style="display: block; margin: auto auto auto 0;" /> <br><br /> Since this part of the interface is identical in all three methods of the <strong>Multivariate Analysis</strong> submenu, you should go see the explanation on the <a href="PCA.html#numerical-indicators">PCA page</a> where it has already been covered. The only difference in the case of a CA is that we talk about rows and columns (which have the same “role”) instead of individuals and variables. <br><br /></p>
 </div>
 </div>
 <div id="potential-issues" class="section level2">
 <h2><strong>Potential issue(s)</strong></h2>
-<p>Unlike the PCA, where the <em>Number of factors</em> in the <strong><em>Automatic Description of the Axes</em></strong> section must be less than or equal to the number of active variable, here it must be strictly lower to the number of active variable (columns in this context). If this condition is not met, an error will occur (see below). <br><br /></p>
+<p>Unlike the PCA or the MCA, where the <em>Number of factors</em> in the <strong><em>Automatic Description of the Axes</em></strong> section must be less than or equal to the number of active variables, here it must be strictly lower than the number of active variables (columns in this context). If this condition is not met, an error will occur. <br><br /></p>
 </div>
 <div id="output-example" class="section level2">
 <h2><strong>Output example</strong></h2>
@@ -417,7 +417,7 @@ Since the CA is used on contingency table, the data used for this analysis in ja
 </div>
 <div id="chi-squared-test" class="section level3">
 <h3>Chi-squared test</h3>
-<p><img src="images/CA13.png" width="20%" style="display: block; margin: auto auto auto 0;" /> <br><br /></p>
+<p><img src="images/CA13.png" width="25%" style="display: block; margin: auto auto auto 0;" /> <br><br /></p>
 </div>
 <div id="eigenvalue-table" class="section level3">
 <h3>Eigenvalue table</h3>
@@ -429,11 +429,11 @@ Since the CA is used on contingency table, the data used for this analysis in ja
 </div>
 <div id="row-tables" class="section level3">
 <h3>Row tables</h3>
-<p><img src="images/CA16.png" width="30%" style="display: block; margin: auto auto auto 0;" /> <br><br /></p>
+<p><img src="images/CA16.png" width="30%" style="display: block; margin: auto auto auto 0;" /><img src="images/CA17.png" width="30%" style="display: block; margin: auto auto auto 0;" /> <br><br /></p>
 </div>
-<div id="column-table" class="section level3">
-<h3>Column table</h3>
-<p><img src="images/CA17.png" width="30%" style="display: block; margin: auto auto auto 0;" /> <br><br /></p>
+<div id="column-tables" class="section level3">
+<h3>Column tables</h3>
+<p><img src="images/CA18.png" width="30%" style="display: block; margin: auto auto auto 0;" /><img src="images/CA19.png" width="30%" style="display: block; margin: auto auto auto 0;" /> <br><br /></p>
 </div>
 </div>
 
