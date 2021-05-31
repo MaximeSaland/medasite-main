@@ -1,5 +1,7 @@
 ---
-title: "descfreq"
+title: "Description of a contingency table"
+output:
+  html_document:
+    toc: True
+    toc_float: True
 ---
-
-More about this website.

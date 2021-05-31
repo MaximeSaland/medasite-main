@@ -7,7 +7,7 @@ output:
 ---
 
 Let's click on the Principal Component Analysis button.\
-For the demonstration of the PCA module, we will be using the decathlon data set (you can catch a glimpse of it on the figure below) which is bundled with MEDA.
+For the demonstration of the PCA module, we will be using the decathlon data set (you can catch a glimpse of it on the figure below) which comes with MEDA.
 
 ```{r PCA1, out.width="80%", fig.align="left", echo=FALSE}
 knitr::include_graphics("images/PCA1.png")
