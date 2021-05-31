@@ -374,7 +374,7 @@ div.tocify {
 
 
 <p>Let’s click on the Principal Component Analysis button.<br />
-For the demonstration of the PCA module, we will be using the decathlon data set (you can catch a glimpse of it on the figure below) which is bundled with MEDA.</p>
+For the demonstration of the PCA module, we will be using the decathlon data set (you can catch a glimpse of it on the figure below) which comes with MEDA.</p>
 <p><img src="images/PCA1.png" width="80%" style="display: block; margin: auto auto auto 0;" /> <br><br /></p>
 <div id="the-interface" class="section level2">
 <h2><strong>The interface</strong></h2>
@@ -382,7 +382,7 @@ For the demonstration of the PCA module, we will be using the decathlon data set
 <div id="variables-selection" class="section level3">
 <h3>Variables selection</h3>
 <p><img src="images/PCA2.png" width="50%" style="display: block; margin: auto auto auto 0;" /> <br><br /></p>
-<p>The first part of this GUI, like most of jamovi modules, is about selecting the variables for your analysis and giving them a role. As you can see on the figure above, there are 4 different types of variable for the PCA. First, we have the active variables, which in the case of a PCA are imperatively quantitative. Then comes the french touch of this module: the quantitative and categorical supplementary variables. These variables won’t participate in the construction of the different axes however, they are used to illustrate them. Lastly, the individual labels variable will label the points on the individuals factor map. <br><br /></p>
+<p>The first part of this GUI, like most of jamovi modules, is about selecting the variables for your analysis and giving them a role. As you can see on the figure above, there are 4 different types of variable for the PCA. First, we have the active variables, which in the case of a PCA are imperatively quantitative. Then comes the french touch of this module: the quantitative and categorical supplementary variables. These variables won’t participate in the construction of the different axes however, they are used to illustrate them. Lastly, the individuals labels variable will label the points on the individuals factor map. <br><br /></p>
 </div>
 <div id="normalized-pca" class="section level3">
 <h3>Normalized PCA</h3>
@@ -391,7 +391,7 @@ For the demonstration of the PCA module, we will be using the decathlon data set
 <div id="graphic-options" class="section level3">
 <h3>Graphic options</h3>
 <p><img src="images/PCA3.png" width="50%" style="display: block; margin: auto auto auto 0;" /> <br><br /></p>
-<p>Let’s move on to the next set of options: the <strong>Graphic options</strong>. As the name suggests, those options rule what will be plotted on the graphics in the results window. With those options, you can choose which components to plot on the x-axis and the y-axis. For the individuals factor map, you can decide to display only the individuals, only the categories (of the categorical variables) or both of them. You can do the same with the active and supplementary variables for the variables factor map. It’s also possible to color the individuals based on the value they have for a categorical variable with the option <strong><em>Grouping variable</em></strong>. This option take as input the position (in the “Categorical Supplementary Variables” field) of the categorical variable used to segregate the individuals with colors. For instance, if we have 4 categorical variables and we want to color the individual based on the 2nd categorical variable, we would set the “Grouping variable” option to 2. <br><br /></p>
+<p>Let’s move on to the next set of options: the <strong>Graphic options</strong>. As the name suggests, those options rule what will be plotted on the graphics in the results window. With those options, you can choose which components to plot on the x-axis and the y-axis. For the individuals factor map, you can decide to display only the individuals, only the categories (of the categorical variables) or both of them. You can do the same with the active and supplementary variables for the variables factor map. It’s also possible to color the individuals based on the value they have for a categorical variable with the option <strong><em>Grouping variable</em></strong>. This option take as input the position (in the “Categorical Supplementary Variables” field) of the categorical variable used to segregate the individuals with colors. For instance, if we have 4 categorical variables and we want to color the individual based on the 2nd categorical variable, we would set the <strong><em>Grouping variable</em></strong> option to 2. <br><br /></p>
 </div>
 <div id="numerical-indicators" class="section level3">
 <h3>Numerical indicators</h3>
@@ -413,8 +413,8 @@ Those indicators (calculated on all the dimensions from 1 to the number in the <
 <p>For the PCA to run correctly, the number of factors in the <strong>Automatic Description of the Axes</strong> must be less than or equal to the number of active variables selected. If this condition is not met, the analysis will produce an error. <br><br /></p>
 </div>
 </div>
-<div id="output-example" class="section level2">
-<h2><strong>Output example</strong></h2>
+<div id="example" class="section level2">
+<h2><strong>Example</strong></h2>
 <p>The data set used for this demo is the decathlon data set. All the options are checked and the <em>Grouping variable</em> option is set to 1 to color the individual based on the competition they participated in. We set the value as 1 because Competition is the first (and only) categorical variable selected. See the figure below for the settings: <img src="images/PCA5.png" width="40%" style="display: block; margin: auto auto auto 0;" /><img src="images/PCA13.png" width="40%" style="display: block; margin: auto auto auto 0;" /><img src="images/PCA14.png" width="40%" style="display: block; margin: auto auto auto 0;" /> <br><br /></p>
 <div id="representation-of-the-individuals" class="section level3">
 <h3>Representation of the individuals</h3>

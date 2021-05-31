@@ -1,5 +1,5 @@
 ---
-title: "Description of variable by categorical / quantative data"
+title: "Description of a categorical variable using textual data"
 output:
   html_document:
     toc: True
@@ -20,9 +20,9 @@ knitr::include_graphics("images/textual2.png")
 ```
 <br><br />
 
-## **Potential issue(s)
+## **Potential issue(s)**
 
-Unlike the first **Automatic Univariate Description** method, you shouldn't try yo set a significance threshold too high. Otherwise, the analysis will run for a very long time (since there might be hundreds of different words) and might not even finish.
+Unlike the first **Automatic Univariate Description** method, you shouldn't try to set a significance threshold too high. Otherwise, the analysis will run for a very long time (since there might be hundreds of different words) and might not even finish.
 
 ## **Example**
 

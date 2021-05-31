@@ -6,7 +6,7 @@ output:
     toc_float: yes
 ---
 
-The third and last method of the **Multivariate Analysis** submenu is the multiple correspondence analysis. This analysis can take both nominal and ordinal categorical variables as active variable. The data used here is the gmo data set provided with the MEDA module.
+The third and last method of the **Multivariate Analysis** submenu is the multiple correspondence analysis. This analysis can take both nominal and ordinal categorical variables as active variables. The data used here is the gmo data set provided with the MEDA module.
 ```{r MCA1, out.width="60%", fig.align="left", echo=FALSE}
 knitr::include_graphics("images/MCA1.png")
 ```
@@ -22,7 +22,7 @@ The overall structure of the MCA GUI is the same as the other two **Multivariate
 knitr::include_graphics("images/MCA2.png")
 ```
 
-The selection of the variables in the MCA is the same as the PCA which means that you have the individual labels, the active variables and the supplementary variables. The only difference is that the active variables in the MCA are categorical and not quantitative like in the PCA.
+The selection of the variables in the MCA is the same as the PCA which means that you have the individual labels, the active variables and the supplementary variables. The only difference is that the active variables in the MCA are qualitative and not quantitative like in the PCA.
 <br><br />
 
 ### The ventilation level
@@ -30,7 +30,7 @@ The selection of the variables in the MCA is the same as the PCA which means tha
 knitr::include_graphics("images/MCA3.png")
 ```
 
-The __*Ventilation level*__ option let you fix the proportion under which a category will be ventilated. In other terms, it let you choose the threshold under which a category will be randomly assigned to another category. **This option prevent rare categories to impact strongly the analysis.**
+The __*Ventilation level*__ option let you fix the proportion under which a category will be ventilated. In other terms, it let you choose the threshold under which a category will be randomly assigned to another category. This option prevent rare categories to impact strongly the analysis.
 <br><br />
 
 ### Graphic options
@@ -38,7 +38,7 @@ The __*Ventilation level*__ option let you fix the proportion under which a cate
 knitr::include_graphics("images/MCA4.png")
 ```
 
-The __Graphic options__ allow you to choose which dimensions to plot. It also let you choose whether to plot either or both active and supplementary categories as well as to plot the correlation circle for the quantitative supplementary variables. Finally, the option __*Selection of categories*__ highlight a set number of categories based on a criterion. In the figure above, the option is set to "cos2 10" so that the 10 categories with the largest sum of square cosine on the plotted dimensions will be highlighted on the graph. However, the square cosine is not the only criterion you can use. The other criteria are:
+The __Graphic options__ allow you to choose which dimensions to plot. It also let you choose whether to plot either or both active and supplementary categories as well as to plot the correlation circle for the quantitative supplementary variables. Finally, the option __*Selection of categories*__ highlight a set number of categories based on a criterion. In the figure above, the option is set to "cos2 10" so that the 10 categories with the largest sum of square cosine on the plotted dimensions are highlighted on the graph. However, the square cosine is not the only criterion you can use. The other criteria are:
 
 * "coord x": highlight the x categories with the largest sums of the square coordinates on the 2 dimensions
 
@@ -56,16 +56,16 @@ knitr::include_graphics("images/MCA5.png")
 Since this part of the interface is identical in the PCA and CA GUIs and given that it has already been covered in the [PCA guide](PCA.html#numerical-indicators), we recommend that you read the explanation there.
 <br><br />
 
-## **Potential issue**
+## **Potential issue(s)**
 
 ### Incorrect number of factors
 
 The __*Number of factors*__ option must be less than or equal to the number of active variables selected. Otherwise, the analysis will produce an error.
 <br><br />
 
-## **Output example**
+## **Example**
 
-For this example, we use the gmo data set. We put the 10 first variables in the *Active Variables (>1)* field and set the rest as categorical supplementary variable. Since the gmo data set doesn't have any quantitative variable, we simulated two dummy variables and added them as supplementary quantitative variables.
+For this example, we use the gmo data set. We put the 10 first variables in the *Active Variables (>1)* field and set the rest as categorical supplementary variables. Since the gmo data set doesn't have any quantitative variable, we simulated two dummy variables and added them as supplementary quantitative variables.
 See the figure below for the settings:
 ```{r MCA16, out.width="40%", fig.align="left", echo=FALSE}
 knitr::include_graphics(c("images/MCA16.png","images/MCA17.png","images/MCA18.png"))

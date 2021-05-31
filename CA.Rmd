@@ -7,7 +7,7 @@ output:
 ---
 
 The second analysis available in the **Multivariate Analysis** submenu is the correspondence analysis.\
-Since a CA is used on a contingency table, the data used for this analysis in jamovi must contain a column with the row labels and the rest of the columns must only take positive integer as value (e.g. frequency in a contingency table). You can see an example in the figure below.
+Since a CA is used on a contingency table, the data used for this analysis in jamovi must contain a column with the row labels and the rest of the columns must only take positive integers as value (e.g. frequency in a contingency table). You can see an example in the figure below.
 ```{r CA1, out.width="60%", fig.align="left", echo=FALSE}
 knitr::include_graphics("images/CA1.png")
 ```
@@ -64,9 +64,9 @@ Since this part of the interface is identical in all three methods of the **Mult
 Unlike the PCA or the MCA, where the *Number of factors* in the __*Automatic Description of the Axes*__ section must be less than or equal to the number of active variables, here it must be strictly lower than the number of active variables (columns in this context). If this condition is not met, an error will occur.
 <br><br />
 
-## **Output example**
+## **Example**
 
-The data used in this example is the music data set.
+The data used in this example is the music data set (cf first figure).\
 See the figure below for the settings:
 ```{r CA7, out.width="40%", fig.align="left", echo=FALSE}
 knitr::include_graphics(c("images/CA7.png","images/CA8.png","images/CA9.png"))
